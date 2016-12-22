@@ -42,4 +42,4 @@ class LootTable:
         r = randrange(1, 100)
         for item in self.items:
             if item.check(r):
-                return item.get_name()
+                return item.get_item()
