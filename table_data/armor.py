@@ -1,6 +1,6 @@
 from table_data import TableData
 
-ARMOR = TableData("Armor", normalize=True)
+ARMOR = TableData("Armor", normalize=True, final=True)
 ARMOR.add_item("Armored Coat", 0, 0, [])
 ARMOR.add_item("Breastplate", 0, 0, [])
 ARMOR.add_item("Scale Mail", 0, 0, [])
