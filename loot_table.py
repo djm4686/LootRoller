@@ -55,6 +55,7 @@ class LootTable:
                 return item.get_item()
 
     def roll(self, container):
+        print "ROLLING: {}".format(self.table_name)
         r = randrange(1, 100)
         for item in self.items:
             if item.check(r):

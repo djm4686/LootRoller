@@ -1,3 +1,8 @@
 from table_data import TableData
+import os
+dir_path = os.path.dirname(os.path.realpath(__file__))
 
-SCROLL = TableData("Scroll")
+SCROLL = TableData("Scroll", normalize=True, final=True)
+with open(dir_path + "/spells1-3", "r") as f:
+    for line in f.readlines():
+        SCROLL.add_item("Scroll of {}".format(line.replace("\n", "")), 0, 0, [])
