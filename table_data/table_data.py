@@ -11,11 +11,11 @@ class TableData:
             self.max = max
             self.next_tables = next_tables
 
-    def __init__(self, name, magic=False, normalize=False, roll_mult=1, final=False):
+    def __init__(self, name, ext=False, normalize=False, roll_mult=1, final=False):
         self.name = name
         self.items = []
         self.roll_multiplier = roll_mult
-        self.magic = magic
+        self.ext = ext
         self.normalize = normalize
         self.final = final
 
@@ -33,8 +33,16 @@ class TableData:
 class GoldData(TableData):
 
     def __init__(self, multiplier):
-        TableData.__init__(self, "Gold", final=True)
+        TableData.__init__(self, "Gold", ext=True, final=True)
         self.multiplier = multiplier
+        self.base_gold = []
+
+    def update_multiplier(self, mult):
+        self.multiplier = mult
+        self.items = []
+        for x in self.base_gold:
+            self.items.append(TableData.TableItem(x.name * self.multiplier, x.min, x.max, x.next_tables))
 
     def add_item(self, amount, min, max, next_tables):
+        self.base_gold.append(TableData.TableItem(amount, min, max, next_tables))
         self.items.append(TableData.TableItem(amount * self.multiplier, min, max, next_tables))

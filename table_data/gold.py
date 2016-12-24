@@ -15,3 +15,5 @@ GOLD.add_item(50, 81, 90, [])
 GOLD.add_item(75, 91, 98, [])
 GOLD.add_item(100, 99, 100, [MAGIC_ITEM])
 
+def set_gold_multiplier(mult):
+    GOLD.update_multiplier(mult)

@@ -1,6 +1,6 @@
 from table_data import TableData
 
-ARMOR = TableData("Armor", normalize=True, final=True)
+ARMOR = TableData("Armor", normalize=True, ext=True, final=True)
 ARMOR.add_item("Armored Coat", 0, 0, [])
 ARMOR.add_item("Breastplate", 0, 0, [])
 ARMOR.add_item("Scale Mail", 0, 0, [])
@@ -17,7 +17,7 @@ ARMOR.add_item("Heavy wooden shield", 0, 0, [])
 ARMOR.add_item("Heavy steel shield", 0, 0, [])
 ARMOR.add_item("Tower shield", 0, 0, [])
 
-LESSER_MINOR = TableData("Lesser Minor Weapon", magic=True, normalize=True)
+LESSER_MINOR = TableData("Lesser Minor Weapon", ext=True, normalize=True)
 LESSER_MINOR.add_item("Benevolent", 0, 0, [ARMOR])
 LESSER_MINOR.add_item("Poison-resistant", 0, 0, [ARMOR])
 LESSER_MINOR.add_item("Balanced", 0, 0, [ARMOR])
@@ -36,7 +36,7 @@ LESSER_MINOR.add_item("Spell storing", 0, 0, [ARMOR])
 LESSER_MINOR.add_item("Stanching", 0, 0, [ARMOR])
 LESSER_MINOR.add_item("Warding", 0, 0, [ARMOR])
 
-PLUS_ONE = TableData("+1", magic=True)
+PLUS_ONE = TableData("+1", ext=True)
 PLUS_ONE.add_item("+1", 1, 100, [ARMOR])
 
 CHECK_LESSER_MINOR = TableData("Check +1")

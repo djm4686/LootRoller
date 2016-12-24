@@ -3,7 +3,7 @@ from table_data import TableData
 POTION2 = TableData("Potion2", normalize=True, final=True)
 POTION2.add_item("Barkskin +3", 0, 0, [])
 
-POTION = TableData("Potion", normalize=True, final=True)
+POTION = TableData("Potion", ext=True, normalize=True, final=True)
 POTION.add_item("Potion of Cure light wounds", 0, 0, [])
 POTION.add_item("Potion of Endure elements", 0, 0, [])
 POTION.add_item("Potion of Hide from animals", 0, 0, [])
