@@ -1,15 +1,15 @@
 __author__ = 'dmadden'
-from table_data.weapon import CHECK_MATERIAL, MAGIC_WEAPON
-from table_data.loot_type import LOOT_TYPE
-from table_data.armor import ARMOR, MAGIC_ARMOR
-from table_data.equipment import EQUIPMENT
-from table_data.gold import GOLD, set_gold_multiplier
-from table_data.potion import POTION
-from table_data.scroll import SCROLL
-from table_data.special import SPECIAL
-
-from loot_table import LootTable
 from argparse import ArgumentParser
+
+from table_data.loot.weapon import CHECK_MATERIAL, MAGIC_WEAPON
+from table_data.loot.loot_type import LOOT_TYPE
+from table_data.loot.armor import ARMOR, MAGIC_ARMOR
+from table_data.loot.equipment import EQUIPMENT
+from table_data.loot.gold import GOLD, set_gold_multiplier
+from table_data.loot.potion import POTION
+from table_data.loot.scroll import SCROLL
+from table_data.loot.special import SPECIAL
+from loot_table import LootTable
 
 
 def roll_specific(num, table):

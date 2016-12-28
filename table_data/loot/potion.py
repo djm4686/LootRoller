@@ -1,4 +1,4 @@
-from table_data import TableData
+from table_data.table_data import TableData
 
 POTION2 = TableData("Potion2", normalize=True, final=True)
 POTION2.add_item("Barkskin +3", 0, 0, [])

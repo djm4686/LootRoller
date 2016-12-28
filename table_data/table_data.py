@@ -19,7 +19,7 @@ class TableData:
         self.normalize = normalize
         self.final = final
 
-    def add_item(self, name, min, max, next_tables):
+    def add_item(self, name, min=0, max=0, next_tables=[]):
         self.items.append(TableData.TableItem(name, min, max, next_tables))
         if self.normalize:
             total = len(self.items)

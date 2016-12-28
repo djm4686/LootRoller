@@ -1,4 +1,4 @@
-from table_data import TableData
+from table_data.table_data import TableData
 
 ARMOR = TableData("Armor", normalize=True, ext=True, final=True)
 ARMOR.add_item("Armored Coat", 0, 0, [])

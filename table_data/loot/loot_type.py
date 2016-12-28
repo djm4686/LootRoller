@@ -1,6 +1,6 @@
 from gold import GOLD
 from item import ITEM
-from table_data import TableData
+from table_data.table_data import TableData
 
 
 LOOT_TYPE = TableData("Loot Type")

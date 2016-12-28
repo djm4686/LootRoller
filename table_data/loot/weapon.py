@@ -1,4 +1,4 @@
-from table_data import TableData
+from table_data.table_data import TableData
 
 WEAPON = TableData("Weapon", ext=True, normalize=True, final=True)
 WEAPON.add_item("Dagger", 0, 0, [])

@@ -1,4 +1,4 @@
-from table_data import GoldData
+from table_data.table_data import GoldData
 from item import MAGIC_ITEM
 
 MULTIPLIER = 8

@@ -1,5 +1,7 @@
-from table_data import TableData
 import os
+
+from table_data.table_data import TableData
+
 dir_path = os.path.dirname(os.path.realpath(__file__))
 
 EQUIPMENT = TableData("Equipment", ext=True, final=True, normalize=True)

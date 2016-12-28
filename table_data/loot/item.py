@@ -4,8 +4,7 @@ from armor import ARMOR_CHECK, MAGIC_ARMOR
 from equipment import EQUIPMENT
 from potion import POTION
 from scroll import SCROLL
-from special import SPECIAL
-from table_data import TableData
+from table_data.table_data import TableData
 
 ITEM = TableData("Item Type")
 ITEM.add_item("Weapon", 1, 20, [WEAPON_CHECK])

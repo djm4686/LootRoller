@@ -1,0 +1,23 @@
+__author__ = 'dmadden'
+from table_data.table_data import TableData
+
+CLASS = TableData("Class", final=True, normalize=True, ext=True)
+CLASS.add_item("Barbarian")
+CLASS.add_item("Bard")
+CLASS.add_item("Cleric")
+CLASS.add_item("Druid")
+CLASS.add_item("Fighter")
+CLASS.add_item("Monk")
+CLASS.add_item("Ranger")
+CLASS.add_item("Rogue")
+CLASS.add_item("Sorcerer")
+CLASS.add_item("Paladin")
+CLASS.add_item("Wizard")
+CLASS.add_item("Alchemist")
+CLASS.add_item("Cavalier")
+CLASS.add_item("Inquisitor")
+CLASS.add_item("Magus")
+CLASS.add_item("Oracle")
+CLASS.add_item("Summoner")
+CLASS.add_item("Vigilante")
+CLASS.add_item("Witch")
