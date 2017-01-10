@@ -3,7 +3,7 @@ from argparse import ArgumentParser
 
 from table_data.loot.weapon import CHECK_MATERIAL, MAGIC_WEAPON
 from table_data.loot.loot_type import LOOT_TYPE
-from table_data.loot.armor import ARMOR, MAGIC_ARMOR
+from table_data.loot.armor import ARMOR, MAGIC_ARMOR 
 from table_data.loot.equipment import EQUIPMENT
 from table_data.loot.gold import GOLD, set_gold_multiplier
 from table_data.loot.potion import POTION

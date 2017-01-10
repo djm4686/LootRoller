@@ -99,8 +99,8 @@ MATERIAL.add_item("Viridium", 86, 90, [WEAPON])
 MATERIAL.add_item("Silversheen", 91, 100, [WEAPON])
 
 CHECK_MATERIAL = TableData("Check Material")
-CHECK_MATERIAL.add_item("Regular", 1, 90, [WEAPON])
-CHECK_MATERIAL.add_item("Altered", 91, 100, [MATERIAL])
+CHECK_MATERIAL.add_item("Regular", 1, 80, [WEAPON])
+CHECK_MATERIAL.add_item("Altered", 81, 100, [MATERIAL])
 
 LESSER_MINOR = TableData("Lesser Minor Weapon", ext=True, normalize=True)
 LESSER_MINOR.add_item("Impervious", 0, 0, [CHECK_MATERIAL])
